@@ -125,6 +125,16 @@ dl{grid-template-columns:1fr}
 .dots{display:flex;justify-content:center;gap:8px}.dots button{width:8px;height:8px;padding:0;border:0;border-radius:99px;background:var(--line);cursor:pointer;transition:width .3s,background .3s}.dots button.on{width:24px;background:var(--brass)}
 #ekona h2{font-size:clamp(28px,3.6vw,46px);max-width:22ch}
 .tx p{margin:0 0 14px;color:var(--mute);max-width:60ch}.tx .sl{font:600 clamp(18px,2vw,22px)/1.4 var(--h);color:var(--fg);margin-bottom:22px}.tx .cl{color:var(--fg);font-weight:600;margin-top:20px}.tx .sg{font-size:15px;margin:24px 0 0}
+
+/* Toonera: styles scoped to the new section */
+#toonera{background:radial-gradient(ellipse at 12% 40%,#352215 0,transparent 55%),#0e0d10;border-block:1px solid var(--line)}
+#toonera .toonera-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,88px);align-items:center}
+#toonera .toonera-art{margin:0;min-width:0}#toonera .toonera-art svg{display:block;width:100%;height:auto;border:1px solid #715335;border-radius:20px}
+#toonera .toonera-eyebrow{color:#e5b76e;font-size:12px;letter-spacing:.14em;font-weight:800;text-transform:uppercase;margin:0 0 20px}
+#toonera h2{font-size:clamp(34px,4vw,58px);max-width:16ch}#toonera .toonera-copy{color:var(--mute);margin:20px 0;max-width:54ch}#toonera .toonera-copy strong{color:var(--fg);font-weight:600}
+#toonera .toonera-tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:26px 0;list-style:none}#toonera .toonera-tags li{font-size:13px;border:1px solid #715335;border-radius:99px;padding:6px 13px;color:#dec5a0}
+#toonera .toonera-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}#toonera .toonera-signoff{font-size:14px;color:#e5b76e;margin:24px 0 0}
+@media(max-width:860px){#toonera .toonera-layout{grid-template-columns:1fr}#toonera .toonera-art{max-width:560px;width:100%;margin-inline:auto}}
 </style>
 <noscript><style>.rv,.ln span,.disc,.hero p,.btns{opacity:1!important;transform:none!important}</style></noscript>
 </head>
@@ -176,6 +186,61 @@ dl{grid-template-columns:1fr}
       <div class="row"><b>Prodüksiyon</b><span>Şarkıların fikirden son hâline kadar müzik prodüksiyonunu yürütüyoruz.</span></div>
       <div class="row"><b>Menajerlik</b><span>Sanatçılarımızın kariyer planını, iş birliklerini ve günlük işlerini yönetiyoruz.</span></div>
       <div class="row"><b>Sosyal medya stratejisi</b><span>Sanatçılarımızın sosyal medyada nasıl görüneceğini planlıyor, stratejiyi birlikte geliştiriyoruz.</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="toonera" aria-labelledby="toonera-title">
+  <div class="toonera-layout">
+    <figure class="toonera-art">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-labelledby="toonera-art-title toonera-art-desc">
+        <title id="toonera-art-title">Toonera Animation — Hayal et. Keşfet. Hisset.</title>
+        <desc id="toonera-art-desc">Altın tonlarında sinema klaketi; yıldızlı gökyüzü, dağlar ve bir şehri gösteren üç çizim karesi. Obimüzik Prodüksiyon için Toonera tanıtım illüstrasyonu.</desc>
+        <defs>
+          <linearGradient id="toonera-gold" x2="0.4" y2="1"><stop stop-color="#fff1cd"/><stop offset=".5" stop-color="#eeb451"/><stop offset="1" stop-color="#a35a1e"/></linearGradient>
+          <radialGradient id="toonera-glow"><stop stop-color="#5a371d"/><stop offset="1" stop-color="#100e12"/></radialGradient>
+          <linearGradient id="toonera-sky" x2="0" y2="1"><stop stop-color="#292742"/><stop offset="1" stop-color="#bd7852"/></linearGradient>
+        </defs>
+        <rect width="640" height="640" rx="20" fill="url(#toonera-glow)"/>
+        <circle cx="320" cy="274" r="220" fill="none" stroke="#bd8d51" opacity=".13"/>
+        <circle cx="320" cy="274" r="186" fill="none" stroke="#bd8d51" opacity=".13"/>
+        <g fill="#e9c68a"><circle cx="100" cy="110" r="2"/><circle cx="530" cy="170" r="2"/><circle cx="473" cy="92" r="3"/><circle cx="149" cy="245" r="2"/><path d="M502 252h16m-8-8v16M182 88h12m-6-6v12" stroke="#e9c68a"/></g>
+        <g transform="translate(271 108) rotate(-9 49 40)" stroke="url(#toonera-gold)" stroke-width="4" stroke-linejoin="round">
+          <rect y="30" width="98" height="68" rx="9" fill="#151216"/>
+          <path d="M0 29V11L98 0v19Z" fill="url(#toonera-gold)"/>
+          <path d="m15 9 14 17m13-20 14 17M70 3l14 17" stroke="#151216" stroke-width="10"/>
+          <path d="m41 48 25 16-25 16Z" fill="url(#toonera-gold)" stroke="none"/>
+        </g>
+        <text x="320" y="289" text-anchor="middle" fill="url(#toonera-gold)" font-family="Arial,sans-serif" font-size="78" font-weight="900" font-style="italic" letter-spacing="-4">TOONERA</text>
+        <path d="M106 311Q320 284 534 311" fill="none" stroke="url(#toonera-gold)" stroke-width="2"/>
+        <text x="320" y="338" text-anchor="middle" fill="#f0dcc1" font-family="Arial,sans-serif" font-size="16" letter-spacing="11">ANIMATION</text>
+        <g transform="translate(52 388)">
+          <rect width="160" height="122" rx="8" fill="url(#toonera-sky)" stroke="#a98154"/>
+          <circle cx="119" cy="30" r="18" fill="#f2d1a1"/>
+          <path d="M1 121V98l35-29 30 21 37-55 56 69v17" fill="#292737"/><path d="m66 90 37-55 14 21-14-7-13 17Z" fill="#ded0ca"/>
+          <rect x="188" width="160" height="122" rx="8" fill="#1c2739" stroke="#a98154"/>
+          <path d="M189 121V96h16V69h21v27h14V54h20v42h13V76h22v20h16V47h20v49h16v25" fill="#0f1722"/>
+          <path d="M199 110q48-42 82-15t57-17" fill="none" stroke="#7babb1" stroke-width="3"/>
+          <g fill="#ecc37c"><path d="M247 64h5v7h-5zm0 16h5v7h-5zm70-23h5v7h-5zm0 16h5v7h-5z"/><circle cx="222" cy="24" r="2"/><circle cx="279" cy="35" r="2"/></g>
+          <rect x="376" width="160" height="122" rx="8" fill="#38273c" stroke="#a98154"/>
+          <circle cx="456" cy="48" r="22" fill="#e9b88d"/>
+          <path d="M434 45q-7-35 24-27 23 3 20 28l-14-14-12 9-12-7Z" fill="#27212c"/>
+          <path d="M416 121q0-49 40-49t40 49" fill="#c48c4a"/><path d="m447 74 9 15 9-15" fill="#f5d9bb"/>
+          <g fill="#27212c"><circle cx="449" cy="49" r="2"/><circle cx="464" cy="49" r="2"/></g><path d="M451 60q5 5 10 0" fill="none" stroke="#7f433c" stroke-width="2"/>
+        </g>
+        <text x="320" y="554" text-anchor="middle" fill="#f0dcc1" font-family="Arial,sans-serif" font-size="21">Hayal et. Keşfet. Hisset.</text>
+        <text x="320" y="592" text-anchor="middle" fill="#ac967e" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">BİR OBİMÜZİK PRODÜKSİYON MARKASI</text>
+      </svg>
+    </figure>
+    <div>
+      <p class="toonera-eyebrow">Obimüzik Prodüksiyon × Toonera Animation</p>
+      <h2 id="toonera-title">Hayal gücüne<br>hareket katıyoruz.</h2>
+      <p class="toonera-copy"><strong>Toonera Animation, Obimüzik Prodüksiyon’un animasyon markasıdır.</strong> Özgün karakterleri, etkileyici senaryoları ve sinematik anlatımı bir araya getirerek hikâyelerimizi ekrana taşıyoruz.</p>
+      <p class="toonera-copy">Duygusal hikâyelerden fantastik maceralara; komedi, dram ve gizemden “Ya böyle olsaydı?” dedirten senaryolara uzanan animasyon içerikleri üretiyoruz. Farklı yaş gruplarına seslenen dünyalar kuruyor, her hikâyeye kendi ritmini ve ruhunu katıyoruz.</p>
+      <ul class="toonera-tags" aria-label="Toonera içerikleri"><li>Özgün karakterler</li><li>Hikâye ve senaryo</li><li>Animasyon serileri</li><li>Sinematik anlatım</li></ul>
+      <div class="toonera-links"><a class="btn f" href="https://www.youtube.com/@ToonerAnimation" target="_blank" rel="noopener noreferrer">Toonera’yı YouTube’da izle ↗</a><a class="btn" href="https://www.instagram.com/tooneranimation/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a class="btn" href="#iletisim">Projen için bize ulaş</a></div>
+      <p class="toonera-signoff">Çünkü her hikâyenin anlatılmaya değer bir yanı vardır.</p>
     </div>
   </div>
 </section>
